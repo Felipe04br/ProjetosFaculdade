@@ -1,3 +1,4 @@
+# lembrar de instalar o leitor de excel: pip install openpyxl e executar com streamlit run Faculdade/app.py
 import streamlit as st
 import pandas as pd
 import numpy as np
