@@ -11,7 +11,6 @@ Repositório com os projetos práticos desenvolvidos durante o curso, combinando
 
 Aplicação web interativa para análise e comparação do consumo de medicamentos entre múltiplas unidades de saúde. Suporta upload de planilhas `.xlsx` com abas separadas por mês e gera visualizações automáticas.
 
-**Arquivos:**
 | Arquivo | Descrição |
 |---|---|
 | `app.py` | Versão básica — múltiplas unidades, um mês por arquivo |
@@ -20,7 +19,6 @@ Aplicação web interativa para análise e comparação do consumo de medicament
 | `Unidade_2.xlsx` | Planilha de exemplo — Unidade 2 (abas: Novembro, Dezembro) |
 | `Unidade_3.xlsx` | Planilha de exemplo — Unidade 3 (aba: Novembro) |
 
-**Como executar:**
 ```bash
 pip install streamlit pandas openpyxl
 streamlit run app.py       # versão básica
@@ -34,13 +32,29 @@ streamlit run teste.py     # versão completa
 
 Calculadora interativa que roda no terminal com interface visual em ASCII. Suporta as operações básicas, módulo e raiz quadrada, além de um sistema de memória que permite encadear cálculos sequenciais.
 
-**Arquivo:** `Calculadora.py`
-
 **Operações suportadas:** `+` `-` `*` `/` `%` `√`
 
-**Como executar:**
 ```bash
 python Calculadora.py
+```
+
+---
+
+### 📥 Extrator e Analisador de Microdados PNAD Contínua
+> `Python` · `Pandas`
+
+Pipeline para download automático via FTP do IBGE, extração e análise estatística dos microdados da PNAD Contínua, com filtragem por UF e geração de relatório Excel segmentado. O banco de dados atual cobre a Bahia (UF 29) de 2023 a 2025 — 274.541 registros e 77 variáveis.
+
+| Arquivo | Descrição |
+|---|---|
+| `App.py` | Download, extração e filtragem dos microdados via FTP |
+| `Media_Moda_Mediana.py` | Média, moda e mediana segmentadas por trimestre, ano e total |
+| `Banco_de_dados.csv` | Base gerada — 274.541 registros (Bahia, 2023–2025) |
+
+```bash
+pip install pandas openpyxl
+python App.py                  # gera o Banco_de_dados.csv
+python Media_Moda_Mediana.py   # gera o Relatorio_PNAD_Segmentado.xlsx
 ```
 
 ---
@@ -48,8 +62,8 @@ python Calculadora.py
 ## 🛠️ Tecnologias
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)
 ![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
+![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)
 
 ---
 
