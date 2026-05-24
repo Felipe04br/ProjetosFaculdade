@@ -59,11 +59,36 @@ python Media_Moda_Mediana.py   # gera o Relatorio_PNAD_Segmentado.xlsx
 
 ---
 
+### 🏗️ Sistema de Gestão de Construtora (POO)
+> `Java`
+
+Sistema de gestão desenvolvido em Java com foco em **Programação Orientada a Objetos**. Organizado em módulos com menus interativos, repositories e herança de classes.
+
+**Módulos:**
+
+| Módulo | Classes principais |
+|---|---|
+| `Cliente` | `Cliente`, `RepositoryCliente`, `MenuCliente` |
+| `Funcionario` | `Funcionario`, `Gestao`, `Operacional`, `FuncionarioRepository`, `MenuFuncionario` |
+| `Projeto` | `Projeto`, `ProjetoResidencial`, `ProjetoPredio`, `ProjetoReforma`, `Planta`, `TipoProjeto`, `StatusProjeto`, `MenuProjeto` |
+| `Construtora` | `Construtora`, `RepositoryConstrutora`, `MenuConstrutora` |
+
+**Conceitos aplicados:** herança, encapsulamento, polimorfismo, enums (`TipoProjeto`, `StatusProjeto`) e padrão Repository.
+
+```bash
+java -jar POO.jar
+```
+
+> Requer [Java](https://www.java.com/) instalado.
+
+---
+
 ## 🛠️ Tecnologias
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
 ![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)
+![Java](https://img.shields.io/badge/Java-E34A34?style=for-the-badge&logo=openjdk&logoColor=white)
 
 ---
 
